@@ -1,0 +1,10 @@
+.elements__info {
+   padding: 22px 20px 22px;
+   box-sizing: border-box;
+   background-color: white;
+   color: black;
+   display: flex;
+   justify-content: space-between;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
