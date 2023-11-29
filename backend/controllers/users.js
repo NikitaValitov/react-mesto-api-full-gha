@@ -4,8 +4,8 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const user = require('../models/user');
 const { ERROR_CODE } = require('../constants/constants');
-const { NotFoundError } = require('../constants/NotFoundError');
-const { BadRequestError } = require('../constants/BadRequestError');
+const NotFoundError = require('../constants/NotFoundError');
+const BadRequestError = require('../constants/BadRequestError');
 const ConflictError = require('../constants/ConflictError');
 
 const { NODE_ENV, JWT_SECRET } = process.env;
@@ -20,16 +20,8 @@ module.exports.getUsers = (req, res, next) => {
 module.exports.getUserById = (req, res, next) => {
   user
     .findById(req.params.userId)
-    .then((user) => {
-      if (!user) {
-        return next(new NotFoundError('Пользователь не найден.'));
-        // но так у меня выходит 500 ошибка, а не 404.
-        // не могу понять почему
-
-        // с этой строкой все рабоатет как надо
-        // res.status(ERROR_CODE.NOT_FOUND).send({ message: 'Пользователь не найден.' });
-      } res.send(user);
-    })
+    .orFail(() => new NotFoundError('Пользователь не найден.'))
+    .then((user) => res.status(ERROR_CODE.OK).send(user))
     .catch((err) => {
       if (err.name === 'CastError') {
         return next(new BadRequestError('Переданы некорректные данные при поиске.'));
