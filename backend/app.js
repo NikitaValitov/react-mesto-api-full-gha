@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
@@ -10,6 +11,8 @@ const auth = require('./middlewares/auth');
 const { centralizedErrorHandler } = require('./middlewares/centralizedErrorHandler');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
+const { DB_ADDRESS } = process.env;
+
 const { PORT = 3001 } = process.env;
 
 const app = express();
@@ -17,9 +20,15 @@ app.use(cors());
 
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
+mongoose.connect(DB_ADDRESS);
 
 app.use(requestLogger); // подключаем логгер запросов
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 
 app.post('/signin', validationLogin, login);
 app.post('/signup', validationCreateUser, createUser);

@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5645ec9b.css",
+    "main.js": "/static/js/main.ecdd5b95.js",
+    "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.44e343ff76a98508d309.woff",
+    "static/media/Inter-Black.woff": "/static/media/Inter-Black.87c06fd2ac7128c9a81d.woff",
+    "static/media/Inter-Regular.woff": "/static/media/Inter-Regular.0d6f7c99e635f1fec4c9.woff",
+    "static/media/Inter-Medium.woff2": "/static/media/Inter-Medium.01f03178adde434fc9fa.woff2",
+    "static/media/Inter-Black.woff2": "/static/media/Inter-Black.ed17840f58cc8c61635a.woff2",
+    "static/media/Inter-Regular.woff2": "/static/media/Inter-Regular.bd097ceff83f90802a12.woff2",
+    "static/media/logo.svg": "/static/media/logo.9acae8482e5b5b17160c.svg",
+    "static/media/likeButton.svg": "/static/media/likeButton.1ad06e85f169668a1f36.svg",
+    "index.html": "/index.html",
+    "static/media/InfoTooltipUnsuccess.svg": "/static/media/InfoTooltipUnsuccess.df8eddf661ff88f2d0efd3d570d14309.svg",
+    "static/media/DelButton.svg": "/static/media/DelButton.ce3b64935accf9b8212e.svg",
+    "static/media/InfoTooltipSuccess.svg": "/static/media/InfoTooltipSuccess.1b6082f862eac35e2514460237d96ecc.svg",
+    "static/media/likeActive.svg": "/static/media/likeActive.dd6a61e81552be95f4b7.svg",
+    "static/media/CloseIcon.svg": "/static/media/CloseIcon.973e77374abfb705de40.svg",
+    "static/media/EditButton.svg": "/static/media/EditButton.6c7bf05444b9793fdf6e.svg",
+    "static/media/AvatarEdit.svg": "/static/media/AvatarEdit.a086f758840ae814ecde.svg",
+    "static/media/AddButton.svg": "/static/media/AddButton.bed8c136e13907f5eefb.svg",
+    "main.5645ec9b.css.map": "/static/css/main.5645ec9b.css.map",
+    "main.ecdd5b95.js.map": "/static/js/main.ecdd5b95.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5645ec9b.css",
+    "static/js/main.ecdd5b95.js"
+  ]
+}

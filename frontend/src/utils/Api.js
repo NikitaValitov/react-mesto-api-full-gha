@@ -117,12 +117,8 @@ class Api {
 }
 
 const api = new Api({
-  // url: 'https://mesto.nomoreparties.co/v1/cohort-73',
-  url: "http://localhost:3001",
-  // headers: {
-  //   "content-type": 'application/json',
-  //   "authorization": '570b2666-b41f-4db7-ab46-34b70d53b1fa'
-  // }
+  // url: "http://localhost:3001",
+  url: "https://api.mesto-nik.nomoredomainsmonster.ru",
 });
 
 export default api;
