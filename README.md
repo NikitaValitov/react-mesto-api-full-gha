@@ -1,15 +1,49 @@
 [![Статус тестов](../../actions/workflows/tests.yml/badge.svg)](../../actions/workflows/tests.yml)
 
-# react-mesto-api-full
-Репозиторий для приложения проекта `Mesto`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизации и регистрации пользователей, операции с карточками и пользователями. Бэкенд расположите в директории `backend/`, а фронтенд - в `frontend/`. 
+# ***Проект Mesto***
+Данный проект является итоговой работой за 13-14-15 спринты от ***Яндекс.Практикум***.
+## *Описание*
+----
+### ***О чём проект?***
 
+Сервис предоставляет возможность делиться фотографиями и лайкать их.
 
-Адрес репозитория: https://github.com/NikitaValitov/react-mesto-api-full-gha
+**Frontend** и **Backend** части приложения.
 
-## Ссылки на проект
+<div align="center"><img src="/frontend/src/images/Mesto.png" width="1000px"></div>
 
-IP 158.160.96.54
+---
+## *Функциональность:*
+* Регистрация;
+* Авторизация;
+* Редактирование аватара;
+* Редактирование профиля;
+* Добавление новой карточки;
+* Удаление карточки при клике на иконку;
+* Поставить / убрать лайк;
+* Открытие фотографии в полном размере.
 
-Frontend https://mesto-nik.nomoredomainsmonster.ru
+---
+## *Используемые технологии:*
+* HTML;
+* CCS;
+* JavaScript;
+* React (Create React App, портирование разметки в JSX, функциональные компоненты);
+* Адаптивная верстка (мобильные устройства, планшеты, десктопы);
+* Методология БЭМ (файловая структура);
+* Flexbox;
+* Grid Layout;
+* Позиционирование;
+* Псевдоклассы;
+* Webpack;
+* Express.js;
+* MongodDB.
 
-Backend https://api.mesto-nik.nomoredomainsmonster.ru
+---
+## *Запуск проекта:*
+`cd backend && npm i && npm run start` — запускает Backend
+
+`cd frontend && npm i && npm run start` — запускает приложение
+
+---
+## [Ссылка](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?type=design&node-id=0-1&mode=design) на макет

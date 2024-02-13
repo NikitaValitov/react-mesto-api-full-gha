@@ -117,8 +117,8 @@ class Api {
 }
 
 const api = new Api({
-  // url: "http://localhost:3001",
-  url: "https://api.mesto-nik.nomoredomainsmonster.ru",
+  url: "http://localhost:3001",
+  // url: "https://api.mesto-nik.nomoredomainsmonster.ru",
 });
 
 export default api;

@@ -1,5 +1,5 @@
-// export const BASE_URL = "http://localhost:3001";
-export const BASE_URL = "https://api.mesto-nik.nomoredomainsmonster.ru";
+export const BASE_URL = "http://localhost:3001";
+// export const BASE_URL = "https://api.mesto-nik.nomoredomainsmonster.ru";
 
 const checkError = (res) => {
    if (res.ok) {
